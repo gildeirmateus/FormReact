@@ -1,26 +1,23 @@
-import React from 'react';
+import React from 'react'
+import { useForm } from 'react-hook-form'
 import '../styles/pagesStyles/loginStyle.css'
 
-function login (){
-    return(
-        <div className="userLogin">
-            <h1 className="titleLogin">LOGIN</h1>
-            <form>
-                <div className="divForm">
-                    <label>Usuário</label>
-                    <input name="user" id="user" type="text" placeholder="user"></input>
-                </div>
-                <div className="divForm">
-                    <label>Senha</label>
-                    <input name="password" id="password" type="password" placeholder="password"></input>
-                </div>
+export default function App() {
+    const { register, handleSubmit} = useForm();
 
-                <div id="bt">
-                    <button className="buttonLogin">login</button>
-                </div>
-            </form>
-        </div>
-    )
+    const onSubmit = (data) => {
+        console.log(data);
+    }
+
+    return (
+        <form onSubmit={handleSubmit(onSubmit)}>
+            <label>Email</label>
+            <input name="user" id="user" type="text" placeholder="user" {...register("Email")}/>
+        
+            <label>Senha</label>
+            <input name="password" id="password" type="password" placeholder="password" {...register("senha")}/>
+            
+            <input type="submit" />
+        </form>
+    );
 }
-
-export default login;
