@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form'
 import { yupResolver}  from '@hookform/resolvers/yup'
 import * as yup from 'yup'
-import '../styles/pagesStyles/loginStyle.css'
+//import '../styles/pagesStyles/loginStyle.css'
 
 function Login() {
     const schema = yup.object().shape({
@@ -29,7 +29,7 @@ function Login() {
                 </div>
                 
                 <div className="input">
-                    <label>Senha</label>
+                    <label>Password</label>
                     <input type="password"{...register("password", { required: true })} />
                     <br></br>
                     <div className="error">
