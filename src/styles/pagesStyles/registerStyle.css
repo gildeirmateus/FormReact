@@ -6,25 +6,42 @@
 .divForm{
     width: 600px;
     margin: 100px auto;
+    margin-top: 70px;
+    margin-bottom: 30px;
     border: 1px solid gray;
-    padding: 100px;
+    padding: 30px 100px 20px 100px;
 }
+
 .divForm label{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
 .input{
-    height: 8rem;
+    height: 4.5rem;
     text-align: center;
+    margin-bottom: 20px;
 }
 .error{
     color: red;
+    margin-bottom: 10px;
 }
-
+form input[type="name"]{
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 1px solid gray;
+   
+}
 form input[type="email"]{
     width: 100%;
-    margin: 10px auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 1px solid gray;
+   
+}
+form input[type="telephone"]{
+    width: 100%;
     padding-top: 8px;
     padding-bottom: 8px;
     border: 1px solid gray;
@@ -32,7 +49,6 @@ form input[type="email"]{
 }
 form input[type="password"]{
     width: 100%;
-    margin: 10px auto;
     padding-top: 8px;
     padding-bottom: 8px;
     border: 1px solid gray;
@@ -42,6 +58,7 @@ form input[type="password"]{
 form input[type="submit"]{
     display: block;
     margin: 10px auto;
+    margin-top: 25px;
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 22px;
